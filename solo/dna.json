@@ -9,7 +9,7 @@
   "rogue": {
     "networking":{
       "application": {
-        "fqdn": "dev.rogue.lmnsolutions.com"
+        "fqdn": "{{fqdn}}"
        }
     }
   },
