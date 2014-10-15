@@ -1,0 +1,11 @@
+{
+  "name": "geoshape_core",
+  "chef_type": "role",
+  "json_class": "Chef::Role",
+  "description": "Core GeoSHAPE Settings",
+  "run_list": [
+    "role[geoshape_base]",
+    "recipe[rogue::postgresql]",
+    "recipe[rogue]"
+  ]
+}
