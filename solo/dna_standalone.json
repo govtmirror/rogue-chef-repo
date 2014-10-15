@@ -1,0 +1,28 @@
+{
+  "run_list": [
+    "role[geoshape_core]"
+  ],
+  "rogue": {
+    "setup_db": false,
+    "networking":{
+      "application": {
+        "fqdn": "{{fqdn}}"
+       },
+    },
+    "geoserver_data":{
+      "url":"https://github.com/state-hiu/geoserver_data.git",
+      "branch":"{{gs-baseline}}"
+    },
+    "rogue_geonode":{
+      "settings":{
+        "CLASSIFICATION_BANNER_ENABLED": {{banner-on}},
+        "CLASSIFICATION_TEXT_COLOR":"{{banner-color-text}}",
+        "CLASSIFICATION_BACKGROUND_COLOR":"{{banner-color-background}}",
+        "CLASSIFICATION_TEXT":"{{banner-text}}"
+      }
+    }
+  },
+  "tomcat":{
+    "java_options": "-Djava.awt.headless=true -Xmx2g -XX:MaxPermSize=256m -XX:+UseConcMarkSweepGC"
+  }
+}
