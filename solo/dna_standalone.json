@@ -3,7 +3,7 @@
     "role[geoshape_core]"
   ],
   "rogue": {
-    "setup_db": false,
+    "setup_db": true,
     "networking":{
       "application": {
         "fqdn": "{{fqdn}}"
