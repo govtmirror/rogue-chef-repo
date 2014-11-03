@@ -7,7 +7,7 @@
     "networking":{
       "application": {
         "fqdn": "{{fqdn}}"
-       },
+       }
     },
     "geoserver_data":{
       "url":"https://github.com/state-hiu/geoserver_data.git",
