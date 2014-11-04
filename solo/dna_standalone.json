@@ -14,6 +14,8 @@
       "branch":"{{gs-data-branch}}"
     },
     "rogue_geonode":{
+      "url":"{{gn-project-url}}",
+      "branch":"{{gn-project-branch}}",
       "settings":{
         "CLASSIFICATION_BANNER_ENABLED": {{banner-on}},
         "CLASSIFICATION_TEXT_COLOR":"{{banner-color-text}}",

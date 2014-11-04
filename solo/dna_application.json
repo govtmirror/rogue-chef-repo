@@ -23,6 +23,8 @@
       "branch":"{{gs-data-branch}}"
     },
     "rogue_geonode":{
+      "url":"{{gn-project-url}}",
+      "branch":"{{gn-project-branch}}",
       "settings":{
         "DATABASES":{
           "default":{
