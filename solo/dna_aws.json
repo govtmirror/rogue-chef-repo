@@ -4,7 +4,7 @@
   ],
   "rogue": {
     "setup_db": false,
-    "aws_rds":true,
+    "aws_rds": true,
     "networking":{
       "application": {
         "fqdn": "{{fqdn}}"
