@@ -20,8 +20,8 @@
       "port": {{db-port}}
     },
     "geoserver_data":{
-      "url":"https://github.com/state-hiu/geoserver_data.git",
-      "branch":"{{gs-baseline}}"
+      "url":"{{gs-data-url}}",
+      "branch":"{{gs-data-branch}}"
     },
     "rogue_geonode":{
       "settings":{
