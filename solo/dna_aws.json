@@ -1,0 +1,48 @@
+{
+  "run_list": [
+    "role[geoshape_external_db]"
+  ],
+  "rogue": {
+    "setup_db": false,
+    "aws_rds":true,
+    "networking":{
+      "application": {
+        "fqdn": "{{fqdn}}"
+       },
+       "database": {
+         "hostname": "{{db-host}}",
+         "address": {{db-ip}}
+       }
+    },
+    "postgresql":{
+      "user":"postgres",
+      "password":"{{db-pass}}",
+      "port": {{db-port}}
+    },
+    "geoserver_data":{
+      "url":"https://github.com/state-hiu/geoserver_data.git",
+      "branch":"{{gs-baseline}}"
+    },
+    "rogue_geonode":{
+      "settings":{
+        "DATABASES":{
+          "default":{
+            "host":"{{db-host}}",
+            "port": {{db-port}}
+          },
+          "geonode_imports":{
+            "host":"{{db-host}}",
+            "port": {{db-port}}
+          }
+        },
+        "CLASSIFICATION_BANNER_ENABLED": {{banner-on}},
+        "CLASSIFICATION_TEXT_COLOR":"{{banner-color-text}}",
+        "CLASSIFICATION_BACKGROUND_COLOR":"{{banner-color-background}}",
+        "CLASSIFICATION_TEXT":"{{banner-text}}"
+      }
+    }
+  },
+  "tomcat":{
+    "java_options": "-Djava.awt.headless=true -Xmx2g -XX:MaxPermSize=256m -XX:+UseConcMarkSweepGC"
+  }
+}
