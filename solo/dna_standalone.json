@@ -2,6 +2,7 @@
   "run_list": [
     "role[geoshape_core]"
   ],
+  "ssl": false,
   "rogue": {
     "setup_db": true,
     "networking":{
