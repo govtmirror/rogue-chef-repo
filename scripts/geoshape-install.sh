@@ -84,7 +84,9 @@ fi
 
 git checkout ${GEOSHAPE_VERSION}
 
+gem install bundler
 bundle install
+
 berks install
 cd ..
 
