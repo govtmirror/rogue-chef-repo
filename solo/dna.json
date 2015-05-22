@@ -5,5 +5,13 @@
 
   "vagrant": true,
 
-  "ssl": true
+  "ssl": true,
+
+  "rogue": {
+    "networking": {
+      "application": {
+        "fqdn__renamed": "replace this entire string with the fully qualified domanin name of your server such as www.example.com AND changed the key to the left fqdn instead o$
+      }
+    }
+  }
 }
