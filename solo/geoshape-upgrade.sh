@@ -91,7 +91,7 @@ berks vendor /opt/chef-run/cookbooks
 
 # now that we have the right commit of repositories checked out, we can provision
 cd /opt/chef-run
-./geoshape-provision.sh
+./geoshape-provision.sh silent
 
 # restore stored directory
 popd
