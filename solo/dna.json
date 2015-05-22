@@ -1,5 +1,9 @@
 {
   "run_list": [
     "role[geoshape_core]"
-  ]
+  ],
+
+  "vagrant": true,
+
+  "ssl": true
 }
