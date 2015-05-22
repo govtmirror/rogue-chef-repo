@@ -5,8 +5,10 @@ All notable changes to this project will be documented in this file.
 [Unreleased][unreleased]
 ------------------------
 
-[1.4] - 2015-05-14
+[1.4] - 2015-05-22
 ------------------
+- Added place holder for fqdn and variable to enable/disable ssl in dna.json
+- Added geoshape-provision script to make it easy to apply dna.json changes
 - Bump the Vagrant file to pull rogue-chef-repo release-1.4 by default
 - Brings in updated maploom, geonode, and other fixes. 
 
