@@ -1,3 +1,3 @@
 source 'https://api.berkshelf.com'
-cookbook 'rogue', :git => "https://github.com/ROGUE-JCTD/rogue-cookbook.git", :ref => "master"
+cookbook 'rogue', :git => "https://github.com/ROGUE-JCTD/rogue-cookbook.git", :ref => "U1404"
 cookbook 'fail2ban', '~> 2.2.1'
