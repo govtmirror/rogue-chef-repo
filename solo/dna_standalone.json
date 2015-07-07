@@ -14,6 +14,9 @@
       "url":"{{gs-data-url}}",
       "branch":"{{gs-data-branch}}"
     },
+    "django_maploom":{
+      "auto_upgrade": true
+    },
     "rogue_geonode":{
       "url":"{{gn-project-url}}",
       "branch":"{{gn-project-branch}}",
