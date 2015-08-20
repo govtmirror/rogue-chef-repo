@@ -2,7 +2,7 @@ DEPENDENCIES
   fail2ban (~> 2.2.1)
   rogue
     git: https://github.com/ROGUE-JCTD/rogue-cookbook.git
-    ref: U1404
+    ref: master
 
 GRAPH
   apt (2.7.0)

@@ -24,7 +24,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   # Install RVM, Ruby and Chef on the Virtual Machine.
   unless BERKSHELF
-    config.vm.provision :shell, :path => "scripts/geoshape-install.sh", :args => "vagrant U1404"
+    config.vm.provision :shell, :path => "scripts/geoshape-install.sh", :args => "vagrant master"
   end
 
   # The url from where the 'config.vm.box' box will be fetched if it
