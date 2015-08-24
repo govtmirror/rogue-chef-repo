@@ -24,7 +24,15 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   # Install RVM, Ruby and Chef on the Virtual Machine.
   unless BERKSHELF
-    config.vm.provision :shell, :path => "scripts/geoshape-install.sh", :args => "vagrant master"
+
+    ######################## NOTE ############################
+    # the parameter passed to geoshape-install.sh will indicate which version of geoshape will be installed. 
+    # for example "release-1.5" will get the tag release-1.5 on the rogue-chef-repo and install everything
+    # according to that releases' corresponding component versions. if a tag, commit id, or branch is not 
+    # specified to indicate which version to install, the newest 'release-xxxx' will be installed. if you want
+    # the latest development version you need to pass in 'master' otherwise not passing a version will get
+    # the latest release
+    config.vm.provision :shell, :path => "scripts/geoshape-install.sh", :args => "vagrant release-1.5"
   end
 
   # The url from where the 'config.vm.box' box will be fetched if it
