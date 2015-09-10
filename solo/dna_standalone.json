@@ -24,9 +24,9 @@
         "CLASSIFICATION_BANNER_ENABLED": {{banner-on}},
         "CLASSIFICATION_TEXT_COLOR":"{{banner-color-text}}",
         "CLASSIFICATION_BACKGROUND_COLOR":"{{banner-color-background}}",
-        "CLASSIFICATION_TEXT":"{{banner-text}}"
+        "CLASSIFICATION_TEXT":"{{banner-text}}",
         "SLACK_ENABLED": false,
-        "SLACK_WEBHOOK_URL": "",
+        "SLACK_WEBHOOK_URL": ""
       }
     }
   },
